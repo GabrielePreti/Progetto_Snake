@@ -168,7 +168,7 @@ void Board::displayBoard(int& punteggio, int speed, int level, int valMela){
 // vengono presi in input velocità, num livello e il valore della mela
 int Board::displaySnake(int vel, int level, int valMela){
     curs_set(0);
-    halfdelay(vel);
+    halfdelay(6 - vel);
     int direction = 2;
     bool end = false, timeFinish=false;
     int ch, punteggio=0, sceltaPausa=0;

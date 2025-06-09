@@ -39,7 +39,7 @@ plist Levels::crea_blista(plist bilista) {
     for (int i = 0; i < 5; i++) 
     {
         livelli[i].numero = i + 1;
-        livelli[i].velocita = 5 - i;
+        livelli[i].velocita = i + 1;
         livelli[i].valore_mela = i + 1;
         livelli[i].bonus =  (double)(i+1)*2;
     }

@@ -20,6 +20,7 @@ Snake::Snake() : Position::Position(){
     head_row = coord[0][0]; //copia delle coordinate della testa per lavorare più velocemente
     head_col = coord[0][1];
 }
+
 void Snake::position() { //Debug
     for (int i = 0; i < snake_length; i++) {
         mvprintw(i + 2,2,"%d", coord[i][0]);

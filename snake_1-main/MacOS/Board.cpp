@@ -163,7 +163,7 @@ void Board::displayBoard(int& punteggio, int speed, int level, int valMela){
 // vengono presi in input velocità, num livello e il valore della mela
 int Board::displaySnake(int vel, int level, int valMela){
     curs_set(0);
-    halfdelay(vel);
+    halfdelay(6 - vel); //calcolo del delay
     int direction = 2;
     bool end = false, timeFinish=false;
     int ch, punteggio=0, sceltaPausa=0;
@@ -190,7 +190,6 @@ int Board::displaySnake(int vel, int level, int valMela){
               before=clock();   // ricomincia il tempo
               generateApple();  // si generano nuove coordinate
               punteggio=0;      // si azzera il punteggio
-              //Position::reset();// serpente ritorna nella posizione standard
             }
           }else{
             // Torna a Menu

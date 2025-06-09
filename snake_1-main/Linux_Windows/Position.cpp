@@ -13,15 +13,6 @@ Position::Position() { //inizializzazione della posizione iniziale del serpente
     }
 }
 
-void Position::reset(){ //reset delle coordinate con lo stesso metodo usato all'interno del costruttore
-    int j = (cols - 1)/2 - snake_length/2;
-    for (int i = 0; i < snake_length; i++) {
-        coord[i][0] = (rows - 1)/2;
-        coord[i][1] = j;
-        j++;
-    }
-}
-
 void Position::debug() {
     for (int i = 0; i < snake_length; i++) {
         cout << "( "<< coord[i][0] << " : ";

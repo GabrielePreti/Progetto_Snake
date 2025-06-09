@@ -15,7 +15,6 @@ protected:
 public:
     Position(); //Costruttore
     void debug(); //Funzione di Debug per visualizzare le coordinate di ogni segmento
-    void reset(); //Reset delle coordinate per ricominciare partita
     void Shift(); //sposta a destra di 1 posizione tutte le coordinate e lascia la coordinata in coord[0][0] impostata a (0, 0)
     void Push(int row_d, int col_d); //inserisce in coord[0][0] la coordinata della testa del serpente
     void Pop(); //rimuove dalla coda dell'array l'ultima coordinata dell'ultimo segmento del serpente
