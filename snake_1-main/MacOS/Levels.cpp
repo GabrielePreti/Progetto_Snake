@@ -37,7 +37,8 @@ plist Levels::ordered_insert(plist bilista, const Livello l) {
 plist Levels::crea_blista(plist bilista) {
     Livello livelli[5];
     for (int i = 0; i < 5; i++) 
-        {livelli[i].numero = i + 1;
+    {
+        livelli[i].numero = i + 1;
         livelli[i].velocita = 5 - i;
         livelli[i].valore_mela = i + 1;
         livelli[i].bonus =  (double)(i+1)*2;
