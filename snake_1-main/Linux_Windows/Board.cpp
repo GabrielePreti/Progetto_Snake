@@ -1,3 +1,4 @@
+//Versione Linux_Windows
 #include <iostream>
 using namespace std;
 #include <cmath>

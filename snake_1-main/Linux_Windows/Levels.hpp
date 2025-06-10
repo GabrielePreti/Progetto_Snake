@@ -1,6 +1,3 @@
-/*
-    TODO: controllare con gra il numero del livello all'interno della board di gioco 
-*/
 #ifndef LEVELS_H
 #define LEVELS_H
 
